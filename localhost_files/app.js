@@ -2,16 +2,10 @@
 //require('angular-route');
 var app = angular.module('personalSite', ['ui.bootstrap', 'ngRoute']);
 //angular.module('myApp', [require('angular-route')]);
-app.controller('MainCtrl', function($scope, $window) {
+app.controller('MainCtrl', function($scope) {
     $scope.name = 'World';
 
-    $scope.resume = function AppCtrl($scope, $sce) {
-
-
-
-    }
 });
-
 app.config(function($routeProvider){
   $routeProvider
           .when('/aboutMe',{
