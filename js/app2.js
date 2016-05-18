@@ -1,6 +1,4 @@
-//app.js
-//require('angular-route');
-var app = angular.module('personalSite', ['ngRoute']);
+var app = angular.module('personalSite', ['ui.bootstrap', 'ngRoute']);
 //angular.module('myApp', [require('angular-route')]);
 app.controller('MainCtrl', function($scope) {
     $scope.name = 'World';

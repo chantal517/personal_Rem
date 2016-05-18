@@ -1,108 +1,62 @@
-<html ng-app="personalSite">
+<html >
   <head>
-    <link href="css/normalize.css">
-    <link href="css/reset.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>
-
+    <link rel="stylesheet" href="octicons/octicons.css">
     <script src="js/app.js"></script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<style>
+
+  #wallpaper{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(back-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+
+  .middle{
+    position: absolute;
+    display: block;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+
+  }
+  .name{
+    font-size: 6em;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .ed{
+    font-size: 4.5em;
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+
+  a { color: white; }
+
+</style>
   </head>
-  <body ng-controller="MainCtrl">
-
-    <nav class="navbar navbar-default" role="navigation">
-         <!-- Brand and toggle get grouped for better mobile display -->
-         <div class="navbar-header">
-           <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-           </button>
-           <a class="navbar-brand" href="#home">Chantal Lewis</a>
-         </div>
-
-         <!-- Collect the nav links, forms, and other content for toggling -->
-         <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
-           <ul class="nav navbar-nav">
-             <li ><a href="#aboutMe">About Me</a></li>
-              <li><a href="#projects">Projects</a></li>
-             <li><a href="#education">Education</a></li>
-             <li ><a target="_blank" href="https://drive.google.com/open?id=0B4EN6Iut0CNpTGNGbTVUcGdWX28">Resume</a></li>
-
-           </ul>
-
-           <ul class="nav navbar-nav navbar-right">
-             <li ><a href="https://www.linkedin.com/in/chantal-lewis-544267b0" target="_blank"><img style="line-height:8px; height:22px; width:78px; padding-top:0px !important;"  src="linkedIn.png"></a></li>
-             <li ><a href="https://github.com/chantal517" target="_blank"><img style="line-height:4px height:16px; width:74px; padding-top:0px !important;"  src="github2.png"></a></li>
-           </ul>
-         </div><!-- /.navbar-collapse -->
-       </nav>
-       <div style="background-image: url(''); background-size='cover'; display: flex; height:100%; width:100%;" class="container">
-         <div style="height:100%; width:100%;" ng-view>
-
-
-         </div>
-       </div>
-
-</html>
+  <body ng-app="personalSite" ng-controller="newCtrl">
+    <div id="wallpaper">
+      <div class="middle" >
+        <h1 class="name"> Chantal Lewis </h1>
+        <a href="https://github.com/chantal517" target="_blank"><span class="octicon octicon-mark-github ed"></span></a>
+        <a target="_blank" href="https://drive.google.com/open?id=0B4EN6Iut0CNpTGNGbTVUcGdWX28"><span class="octicon octicon-file-text ed"></span></a>
+      </div >
 
 
 
-<!--
-      <nav class="navbar navbar-default navbar-static-top custom-navbar" role="navigation">
-      <div style="margin:0px; margin-right:0cm;"class="container">
 
 
-      <a style="float:left;"class="navbar-brand " rel="home" href="#" title="AboutMe">About Me</a>
-      <a class="navbar-brand navbar-left" href="#">Education</a>
-      <a class="navbar-brand" href="#">Experience</a>
-      <a class="navbar-brand" href="#">Contact</a>
-      <a class="navbar-brand navbar-right" href="https://github.com/chantal517" target="_blank"><img style="height:36px; width:85px; padding-top:0px;"class ="navbar-brand"  src="GitHub_Logo.png"></a>
-      <a class="navbar-brand navbar-right" href="https://www.linkedin.com/in/chantal-lewis-544267b0" target="_blank"><img style="height:35px; padding-top:0px;"class ="navbar-brand navbar-right"  src="linkedIn.png"></a>
-  </div>
-  </nav>
--->
+    </div>
 
-<!--
-<nav class="navbar navbar-inverse navbar-static-top custom-navbar" role="navigation">
-         <div style="margin-left:0px; margin-right:0px"class="container">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-header">
-               <a class="navbar-brand" rel="home" href="#" title="Help">
-               Help ?
-               </a>
-            </div>
 
-            <ul class="nav navbar-nav navbar-right">
-               <li>
-                 <a href="#" class="fa fa-cog"></a>
-               </li>
-               <li style>
-                 <a href="#" class="fa fa-home"></a>
-               </li>
-            </ul>
-
-            <div class="collapse navbar-collapse navbar-left"  id="navbar-collapse-1">
-               <ul class="nav navbar-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-               </ul>
-            </div>
-
-         </div>
-
-      </nav>
-
-    <h1>Chantal Your Server is Running...</h1>
+    </div>
 
   </body>
-</html>
--->
+  </html>
