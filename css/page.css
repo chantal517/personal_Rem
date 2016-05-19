@@ -1,21 +1,83 @@
-/*html, body {
-      height:100%;
 
-      display:flex;
-      flex-direction:column;
-    }
-
-    body > * {
-      flex-shrink: 0;
-    }
-*/
-
-body, html { width:100% ;
-  height:100% ;
-  overflow:hidden ;
+*, *:before, *:after {
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+html, body {
+    height: 100%;
 }
 
-iframe { width:100% ; // set your width here
-      height:100% ;
-  border:none ;
+body {
+    margin: 0;
 }
+
+
+#wallpaper{
+  /*position: absolute;*/
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../back-img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  float: clear;
+}
+
+.middle{
+  position: absolute;
+  display: block;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+
+}
+.name{
+  font-size: 6em;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+.ed{
+  font-size: 4.5em;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+#octo{
+  font-size: 4.5em;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+#linked{
+
+  font-size: 4.25em;
+  margin-left: 9px;
+  margin-right: 9px;
+
+}
+.icons{
+  padding-top: 35px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 120%;
+
+}
+#about{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../back-img.jpg);
+
+  float: clear;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.nav{
+  color:black;
+  font-size: 1.5em;
+}
+.typed{
+  position: absolute;
+  width: 100%;
+
+}
+a { color: white; }
