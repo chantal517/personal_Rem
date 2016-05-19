@@ -78,6 +78,12 @@ body {
 .typed{
   position: absolute;
   width: 100%;
+/*  color:white; */
 
+}
+.aboutme{
+  width: 100%;
+  position: absolute;
+  text-align: center;
 }
 a { color: white; }
