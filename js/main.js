@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
        $(".element").typed({
-           strings: ["Tech Enthusiast", "Student", "Software Engineer", "Tech Enthusiast + Student + Software Engineer"],
+           strings: ["Tech Enthusiast", "Student", "Software Engineer", "Tech Enthusiast - Student - Software Engineer"],
            typeSpeed: 0,
            backDelay: 500,
            cursorChar: "",
