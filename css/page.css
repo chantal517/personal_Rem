@@ -86,4 +86,7 @@ body {
   position: absolute;
   text-align: center;
 }
+.element{
+  font-size: 2.85em;
+}
 a { color: white; }
