@@ -29,6 +29,7 @@ body {
   width: 100%;
   text-align: center;
 
+
 }
 .name{
   font-size: 6em;
@@ -45,12 +46,28 @@ body {
   font-size: 4.5em;
   margin-left: 9px;
   margin-right: 9px;
+
+}
+#octo2{
+  font-size: 5em;
+  margin-left: 9px;
+  margin-right: 9px;
+  color: white;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
+}
+#octo3{
+  font-size: 4.5em;
+  margin-left: 9px;
+  margin-right: 9px;
 }
 #linked{
 
   font-size: 4.25em;
   margin-left: 9px;
   margin-right: 9px;
+
 
 }
 .icons{
@@ -78,6 +95,7 @@ body {
 .typed{
   position: absolute;
   width: 100%;
+  font-size: .9em;
 /*  color:white; */
 
 }
@@ -94,3 +112,47 @@ body {
   font-size: 2.85em;
 }
 a { color: white; }
+
+.iconDesc p {
+  text-align: center;
+  font-size: 1.1em;
+  display: inline-block;
+  color: white;
+}
+#gi{
+  padding-left: 0px;
+  margin-left: 16px;
+  visibility: hidden;
+  /*margin-left: 5px;*/
+  margin-right: 5px;
+}
+#re{
+  visibility: hidden;
+  padding-left: 10px;
+  margin-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+  /*margin-right: 5px;*/
+
+}
+#li{
+  visibility: hidden;
+  padding-left: 8px;
+  margin-top: 0px;
+  padding-top: 0px;
+  /*margin-left: 5px;*/
+
+}
+#ab{
+  visibility: hidden;
+  padding-left: 5px;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+
+  /*margin-left: 15px;
+  margin-right: 0px;*/
+}
+/*#hover-content {
+    display:none;
+}*/
